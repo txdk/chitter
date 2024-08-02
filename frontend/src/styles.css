@@ -1,0 +1,139 @@
+.header {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: azure;
+    font-family: Trebuchet MS, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    height: 18px;
+    background-color: cornflowerblue;
+    color: azure;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.login-page {
+    margin: auto;
+    margin-top: 20px;
+    width: 600px;
+    border: 1.5px solid cadetblue;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.feed {
+    margin: auto;
+    width: 800px;
+    border: 1.5px solid cadetblue;
+    border-radius: 8px;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    gap: 10px;
+}
+
+.post-form {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 600px;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.post-form-text {
+    width: 70%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.post {
+    margin-left: 5px;
+    font-family: Verdana, sans-serif;
+    text-align: left;
+    color: black;
+    background-color: cornsilk;
+}
+
+.header-username {
+    text-align: right;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.tags {
+    text-align: right;
+    font-size: small;
+    color: gray;
+}
+
+.failure-text {
+    color: red;
+}
+
+.button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: Trebuchet MS, sans-serif;
+    color: white;
+    background-color: cadetblue;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: rgb(57, 110, 112);
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 600px) {
+    [class="login-page"] {
+        margin: auto;
+        margin-top: 20px;
+        width: 300px;
+        border: 1.5px solid cadetblue;
+        font-family: Trebuchet MS, sans-serif;
+    }
+
+    [class="feed"] {
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 350px;
+        border: 1.5px solid cadetblue;
+        font-family: Trebuchet MS, sans-serif;
+    }
+
+    [class="post-form"] {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 350px;
+        font-family: Trebuchet MS, sans-serif;
+    }
+
+    [class="post-form-text"] {
+        width: 100%;
+        height: 75px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+}
