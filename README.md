@@ -6,16 +6,16 @@ A web-based Twitter clone using ReactJS for the frontend and Java Spring for the
 
 To build and run the backend server:
 
-'''sh
+```sh
 cd backend
 export SECRET_KEY=<YOUR-256-BIT-KEY>
 export SERVER_ADDRESS=<YOUR-IP>
 mvn clean spring-boot:run
-'''
+```
 
 To build and run the frontend server:
-'''sh
+```sh
 cd frontend
 npm install
 REACT_APP_SERVER_ADDRESS=<YOUR-IP> npm start
-'''
+```
