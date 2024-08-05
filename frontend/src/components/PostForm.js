@@ -35,7 +35,7 @@ export default function PostForm({ state, dispatch }) {
       .then((response) => {
         dispatch({
           type: "create",
-          payload: postData,
+          payload: response.data,
         });
 
         console.log(response);

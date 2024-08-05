@@ -8,7 +8,7 @@ To build and run the backend server:
 
 ```sh
 cd backend
-export SECRET_KEY=<YOUR-256-BIT-KEY>
+export SECRET_KEY=<YOUR-512-BIT-KEY>
 export SERVER_ADDRESS=<YOUR-IP>
 mvn clean spring-boot:run
 ```
