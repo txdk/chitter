@@ -65,5 +65,11 @@ public class PostController {
         postService.deletePost(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+    @PutMapping("/{id}/like")
+    public ResponseEntity<Post> likePost(@AuthenticationPrincipal UserDetails userDetails, @PathVariable Long id) {
+        logger.info("PUT request received on endpoint {}/like", id);
+        return new ResponseEntity<>(postService.likePost(id, userDetails), HttpStatus.OK);
+    }
     
 }

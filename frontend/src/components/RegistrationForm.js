@@ -45,7 +45,12 @@ export default function RegistrationForm() {
 
   return (
     <form className="login-page" onSubmit={handleSubmit}>
-      <h2>📝 Create an account</h2>
+      <div className="container">
+        <h2>📝 Create an account</h2>
+        <button className="button header-button" onClick={() => {navigate("/")}}>
+          ⮐
+        </button>
+      </div>
       <div>
         <input
           type="text"

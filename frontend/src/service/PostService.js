@@ -11,11 +11,13 @@ const getPosts = (token) =>
       Authorization: `Bearer ${token}`,
     },
   });
+
 const createPost = (post, token) =>
   api.post(
     "/",
     {
       content: post.content,
+      likedUsers: []
     },
     {
       headers: {
@@ -24,4 +26,15 @@ const createPost = (post, token) =>
     }
   );
 
-export { getPosts, createPost };
+const likePost = (id, token) =>
+  api.put(
+    `${id}/like`,
+    {},
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
+
+export { getPosts, createPost, likePost };
